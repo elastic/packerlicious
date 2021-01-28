@@ -447,6 +447,7 @@ class AmazonEbsSurrogate(PackerBuilder):
 
     props = {
         'access_key': (str, False),
+        'ami_name': (str, True),
         'instance_type': (str, True),
         'region': (str, True),
         'secret_key': (str, False),
