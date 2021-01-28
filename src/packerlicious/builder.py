@@ -452,6 +452,7 @@ class AmazonEbsSurrogate(PackerBuilder):
         'ami_root_device': (BlockDeviceMapping, True),
         'source_ami': (str, False),
         'ami_block_device_mappings': ([BlockDeviceMapping], False),
+        'source_device_name': (str, True),
         'ami_architecture': (str, False),
         'ami_description': (str, False),
         'ami_groups': ([str], False),
