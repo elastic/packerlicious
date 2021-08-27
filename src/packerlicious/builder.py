@@ -1870,7 +1870,6 @@ class VirtualboxIso(PackerBuilder):
 
     props = {
         'iso_checksum': (str, False),
-        'iso_checksum_type': (validator.string_list_item([NONE, MD5, SHA1, SHA256, SHA512]), True),
         'iso_checksum_url': (str, False),
         'iso_url': (str, True),
         'boot_command': ([str], False),
