@@ -391,6 +391,7 @@ class AmazonEbs(PackerBuilder):
         'subnet_id': (str, False),
         'tags': (dict, False),
         'temporary_key_pair_name': (str, False),
+        'temporary_key_pair_type': (str, False),
         'temporary_security_group_source_cidrs': ([str], False),
         'token': (str, False),
         'user_data': (str, False),
@@ -1022,6 +1023,7 @@ class GoogleCompute(PackerBuilder):
         'startup_script_file': (str, False),
         'state_timeout': (str, False),
         'subnetwork': (str, False),
+        'temporary_key_pair_type': (str, False),
         'tags': ([str], False),
         'use_internal_ip': (validator.boolean, False),
     }
